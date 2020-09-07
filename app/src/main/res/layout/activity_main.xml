@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.MainActivity">
+
+    <TextView
+        android:id="@+id/screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/screen_title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="city name"
+        android:textSize="22sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_title" />
+
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="country name"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city_name" />
+
+    <TextView
+        android:id="@+id/sunset_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:text="@string/sunnset_title"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/sunrise_title"
+        app:layout_constraintTop_toBottomOf="@+id/country_name" />
+
+    <TextView
+        android:id="@+id/sunset_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="sunset"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/sunrise_hour"
+        app:layout_constraintTop_toBottomOf="@+id/sunset_title" />
+
+    <TextView
+        android:id="@+id/sunrise_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/sunrise_title"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/sunset_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_name" />
+
+    <TextView
+        android:id="@+id/sunrise_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="sunrise"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/sunset_hour"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sunrise_title" />
+
+    <TextView
+        android:id="@+id/current_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/current_title"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sunrise_hour" />
+
+    <TextView
+        android:id="@+id/current_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/current_date_title"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/sunrise_hour"
+        app:layout_constraintTop_toBottomOf="@+id/current_title" />
+
+    <TextView
+        android:id="@+id/current_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="current date"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/sunset_hour"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_title" />
+
+    <TextView
+        android:id="@+id/current_tmp_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/current_tmp_title"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/sunrise_hour"
+        app:layout_constraintTop_toBottomOf="@+id/current_date_title" />
+
+    <TextView
+        android:id="@+id/current_tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="current tmp"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/sunset_hour"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_date" />
+
+    <TextView
+        android:id="@+id/current_wnd_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/current_wnd_title"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/sunrise_hour"
+        app:layout_constraintTop_toBottomOf="@+id/current_tmp_title" />
+
+    <TextView
+        android:id="@+id/current_wnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="current wind"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/sunset_hour"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_tmp" />
+
+    <TextView
+        android:id="@+id/current_pression_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/current_pression_title"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/sunrise_hour"
+        app:layout_constraintTop_toBottomOf="@+id/current_wnd_title" />
+
+    <TextView
+        android:id="@+id/current_pression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="current pression"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/sunset_hour"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_wnd" />
+
+    <TextView
+        android:id="@+id/current_humidity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/current_humidity_title"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/sunrise_hour"
+        app:layout_constraintTop_toBottomOf="@+id/current_pression_title" />
+
+    <TextView
+        android:id="@+id/current_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="current humidity"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/sunset_hour"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_pression" />
+
+    <TextView
+        android:id="@+id/current_condition_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/current_conditions_title"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/sunrise_hour"
+        app:layout_constraintTop_toBottomOf="@+id/current_humidity_title" />
+
+    <TextView
+        android:id="@+id/current_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="current condition"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/sunset_hour"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_humidity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

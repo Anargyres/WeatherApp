@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="screen_title">Météo à :</string>
+    <string name="sunrise_title">Lever de soleil :</string>
+    <string name="sunnset_title">Coucher de soleil :</string>
+    <string name="current_title">Condition actuelle :</string>
+    <string name="current_date_title">Date du jour :</string>
+    <string name="current_tmp_title">Température actuelle :</string>
+    <string name="current_wnd_title">Force du vent :</string>
+    <string name="current_pression_title">Pression :</string>
+    <string name="current_humidity_title">Humidité :</string>
+    <string name="current_conditions_title">Conditions météo :</string>
+</resources>
